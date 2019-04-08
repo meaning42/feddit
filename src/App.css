@@ -1,0 +1,145 @@
+.app-wrapper {
+    margin: auto;
+    width: 90vmin;
+}
+
+.app-logo {
+	animation: app-logo-spin infinite 40s linear;
+	height: 5vmin;
+	pointer-events: none;
+}
+
+.app-header {
+	background-color: #282c34;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+.app-footer {
+	background-color: #282c34;
+	color: #DEE7EC;
+	min-height: 5vh;
+	padding: 0.8rem;
+}
+
+.post-info {
+	padding: 0.8rem;
+}
+.post-info strong {
+	color: #555;
+}
+.post-info img {
+	border: 1px solid #DDD;
+}
+
+.reddit-viewer {
+	display: block;
+	padding: 2rem;
+	position: relative;
+}
+
+.reddit-viewer h2 {
+	color: #999;
+}
+
+.reddit-viewer h2 span {
+	color: #369;
+}
+
+.reddit-viewer .pager {
+	bottom: 0px;
+	background-color: #EAEAEA;
+	border: 2px solid white;
+	opacity: 0.9;
+	position: sticky;
+	width: 100%;
+}
+.reddit-viewer .pager .tiles {
+	padding: 1rem;
+}
+
+.tiles {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+a {
+	color: #369;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333;
+}
+
+a:hover,
+a:active {
+	color: #69C;
+	text-decoration: underline;
+}
+
+body {
+	margin: 0;
+	padding:0;
+	height: 100%;
+	width: 100%;
+}
+
+button {
+	border-radius: 9px;
+	color: #777;
+	cursor: pointer;
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 0.4rem;
+}
+
+button:hover {
+	background-color: #FFF;
+	color: #111;
+}
+
+button[disabled] {
+	background-color: #999;
+}
+
+button[disabled]:hover {
+	background-color: #999;
+}
+
+dd, dt {
+	border: 1px solid #DDD;
+	padding: 1rem;
+}
+
+dd {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top-color: transparent;
+	margin: 0;
+	padding-top: 0;
+}
+
+dt {
+	background-color: #F5F5F5;
+	border-bottom-color: transparent;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	margin-top: 1.5rem;
+}
+
+@keyframes app-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
