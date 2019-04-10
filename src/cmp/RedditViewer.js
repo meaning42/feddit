@@ -66,7 +66,7 @@ class RedditViewer extends Component {
                 {!posts && <h2>Loading...</h2>}
                 {!isFetching && posts && posts.length === 0 && <h2>Empty.</h2>}
                 {posts && posts.length > 0 && (
-                    <div style={{ opacity: isFetching ? 0.5 : 1 }}>
+                    <div className={isFetching ? 'mask' : '' }>
                         <Listing posts={posts} />
 						<Pager last={slice.sliceLast} next={slice.sliceNext} pagerClick={this.handleRefreshClick} />
                     </div>
